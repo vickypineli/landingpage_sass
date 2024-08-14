@@ -15,14 +15,19 @@ Este repositorio contiene el código fuente de una landing page construida utili
 landingpage_sass/
 ├── index.html
 ├── css/
-│   ├── styles.css
-├── sass/
+│   ├── main.css
+    │──   main.css.map
+├── scss/
 │   ├── main.scss
-│   ├── _variables.scss
-│   ├── _mixins.scss
-│   ├── _base.scss
-│   └── _components.scss
 └── assets/
-    └── images/
-        └── imagen-ejemplo.png
+    └── img/
+        └── furniture
+        └── products
+    └── earth.png
+    └── ecology.png
+    └── facebook-logo.png
+    └── gallery-1.png
+    └── furniture-2.png
+    └── furniture-3.png
+    └── Mockup.png
 
