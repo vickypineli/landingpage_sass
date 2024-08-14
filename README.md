@@ -1,6 +1,4 @@
 # Landing Page con Sass
-
-![Landing Page](ruta/a/la/imagen/del/proyecto.png)
 ![Descripción de la imagen](assets\img\Mockup.png)
 
 Este repositorio contiene el código fuente de una landing page construida utilizando **HTML**, **CSS** y **Sass**. El proyecto está diseñado para ser limpio, responsive y fácil de mantener gracias al uso de Sass para gestionar estilos de manera eficiente.
