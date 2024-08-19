@@ -31,3 +31,24 @@ landingpage_sass/
     └── furniture-3.png
     └── Mockup.png
 
+Instrucciones para instalar y configurar Sass mediante Node.js
+Abre una terminal y navega hasta la carpeta raíz de tu proyecto.
+Asegúrate de tener Node.js instalado en tu sistema. Puedes verificarlo escribiendo node -v en la terminal. Si no lo tienes instalado, ve al sitio web oficial de Node.js para descargarlo e instalarlo.
+
+Ejecuta el siguiente comando para instalar Sass a nivel global:
+npm install -g sass
+Ahora que tienes Sass instalado a nivel global, puedes compilar tus archivos Sass en CSS con el siguiente comando en la terminal:
+sass input.scss output.css
+Reemplaza “input.scss” con la ruta y el nombre de tu archivo Sass, y “output.css” con la ruta y el nombre de tu archivo CSS de salida. Por ejemplo:
+sass styles/main.scss styles/main.css
+Si quieres compilar automáticamente tus archivos Sass en CSS cada vez que hagas cambios, puedes usar la opción --watch:
+sass --watch input.scss:output.css
+Si estás utilizando Node.js en tu proyecto, también puedes usar un paquete de npm llamado sass para compilar tus archivos Sass en CSS. Para instalarlo, ejecuta el siguiente comando:
+npm install sass
+En tu archivo de configuración de Node.js (como package.json) agrega un script para compilar tus archivos Sass en CSS. Por ejemplo:
+"scripts": {
+  "build:css": "sass input.scss output.css"
+}
+Ahora puedes ejecutar el script con el siguiente comando:
+npm run build:css
+Eso es todo. Con estas instrucciones deberías poder instalar y configurar Sass en tu proyecto de Node.js.
