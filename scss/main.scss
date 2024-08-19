@@ -16,18 +16,22 @@ $paragraph-size: 1.5em;
 	justify-content: $content;
 	align-items: $align;
 }
+
 @mixin buttonStyle{
 	button{
 		background: none;
 		border-style: none;
 	}
 }
+
+
 body{
 	margin:0px;
 	padding:0px;
 	background-color: $primary-color;
 	font-family: $font-stack;
 }
+
 nav{
 	width: auto;
 	@include flexCenter(row, space-between ,center);
@@ -68,7 +72,7 @@ article{
 	button{
 		width: 12vw;
 		padding: 20px;
-		background-color: red;
+		background-color: $quaternary-color;
 		border-radius: 35px;
 		color: white;
 		font-size: 1em;
@@ -81,6 +85,7 @@ article{
 		border-radius: 19px;
 	}
 }
+
 section{
 	width: auto;
 	height: auto;
@@ -143,6 +148,7 @@ section{
 		}
 	}
 }
+
 .about-us{
 	padding-bottom: 60px;
 	h2{
@@ -206,13 +212,15 @@ section{
 		font-size: $paragraph-size;
 	}
 }
-
-// main{
-//     background-color: $primary-color;
-
-// }
 footer{
-    background-color: #FA9500;
-    width: 100%;
-    height: 300px;
+	background-color: $quaternary-color;
+	width: 100%;
+	height: auto;
+	padding:40px;
+	color:white;
+	.social-media{
+		@include flexCenter(row,center,center);
+		gap:40px;
+		padding-bottom: 40px;
+	}
 }
