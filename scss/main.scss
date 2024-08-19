@@ -171,6 +171,41 @@ section{
 		@extend .earth;
 	}
 }
+.gallery{
+	h2{
+		font-weight: bold;
+		padding-bottom: 60px;
+	}
+	.gallery-images{
+		@include flexCenter(row, space-between ,center);
+		img{
+			width: 28vw;
+			height: 45vh;
+			object-fit: cover;
+			object-position: 5px 35%;
+			border-radius: 16px;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+
+	}
+}
+.location{
+	$text-color: #E86424;
+	color: $text-color;
+	h2{
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+	.map{
+		@include flexCenter(row, center ,center);
+		padding-bottom: 50px;
+	}
+	h3,p{
+		font-size: $paragraph-size;
+	}
+}
 
 // main{
 //     background-color: $primary-color;
