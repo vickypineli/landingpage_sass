@@ -6,7 +6,10 @@ $quaternary-color:#FA9500;
 $font-stack: 'IBM Plex Sans', sans-serif;
 $paragraph-size: 1.5em;
 
-
+// los mixins en Sass te ayudan a escribir CSS más limpio, modular,
+//  y mantenible al permitir la reutilización de código, 
+//  manejar parámetros dinámicos, 
+//  y aplicar reglas comunes de manera más eficiente.
 @mixin flexCenter($direction,$content,$align){
 	display: flex;
 	flex-direction: $direction;
@@ -140,11 +143,39 @@ section{
 		}
 	}
 }
-
-main{
-    background-color: $primary-color;
-
+.about-us{
+	padding-bottom: 60px;
+	h2{
+		font-weight: bold;
+		padding-bottom: 60px;
+	}
+	.mission-section{
+		@include flexCenter(row,space-evenly,center);
+		.earth{
+			$text-color: #E86424;
+			width: 30vw;
+			display:flex;
+			gap:40px;
+			color: $text-color;
+			img{
+				object-fit: contain;
+				
+			}
+			p{
+				text-align: center;
+				font-size: $paragraph-size;
+			}
+		}
+	}
+	.innovation{
+		@extend .earth;
+	}
 }
+
+// main{
+//     background-color: $primary-color;
+
+// }
 footer{
     background-color: #FA9500;
     width: 100%;
