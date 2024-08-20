@@ -31,8 +31,8 @@ landingpage_sass/
     └── furniture-3.png
     └── Mockup.png
 
-Instrucciones para instalar y configurar Sass mediante Node.js
-Abre una terminal y navega hasta la carpeta raíz de tu proyecto.
+## Instrucciones para instalar y configurar Sass mediante Node.js
+**Abre una terminal y navega hasta la carpeta raíz de tu proyecto.**
 Asegúrate de tener Node.js instalado en tu sistema. Puedes verificarlo escribiendo node -v en la terminal. Si no lo tienes instalado, ve al sitio web oficial de Node.js para descargarlo e instalarlo.
 
 Ejecuta el siguiente comando para instalar Sass a nivel global:
